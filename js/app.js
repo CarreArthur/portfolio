@@ -20,23 +20,6 @@ function showResponsiveMenu() {
 }
 
 
-function fadeIn(element) {
-    element.style.opacity = 0;
-    element.style.display = "block";
-    let last = +new Date();
-    const tick = function() {
-        element.style.opacity = +element.style.opacity + (new Date() - last) / 1000;
-        last = +new Date();
-        if (+element.style.opacity < 1) {
-            requestAnimationFrame(tick);
-        }
-    };
-    tick();
-}
 
-
-// Utilisation
-const myElement = document.getElementById('myElement');
-fadeIn(myElement); // Pour faire apparaître
 
 
