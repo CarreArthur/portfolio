@@ -1,3 +1,23 @@
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.container').forEach((section) => {
+        const position = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (position < screenPosition) {
+            section.classList.add('reveal');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const title = document.querySelector('header h1');
+    title.style.opacity = '0';
+    setTimeout(() => {
+        title.style.transition = 'opacity 2s';
+        title.style.opacity = '1';
+    }, 500);
+});
+
 function showResponsiveMenu() {
     var menu = document.getElementById("topnav_responsive_menu");
     var icon = document.getElementById("topnav_hamburger_icon");
