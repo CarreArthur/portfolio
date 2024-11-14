@@ -139,24 +139,6 @@
     </footer>
 </body>
 <script src="js/app.js"></script>
-<script>
-    let lastScrollPosition = 0;
-const navbar = document.getElementById("topnav_hamburger_icon");
-
-window.addEventListener("scroll", () => {
-    const currentScrollPosition = window.pageYOffset;
-
-    if (currentScrollPosition > lastScrollPosition) {
-        // Si on défile vers le bas, on cache la navbar
-        navbar.style.top = "-300px"; // Ajustez selon la hauteur de votre navbar
-    } else {
-        // Si on défile vers le haut, on affiche la navbar
-        navbar.style.top = "0";
-    }
-
-    lastScrollPosition = currentScrollPosition;
-});
-</script>
 
 
 
