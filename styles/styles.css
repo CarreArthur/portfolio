@@ -69,18 +69,12 @@ header {
     flex-direction: row;
     gap: 100px;
     position: static; 
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
 }
 
 #topnav_hamburger_icon {
     display: none;
 }
 
-#topnav_responsive_menu.slide-in {
-    max-height: 200px;
-}
 
 
 /*section1*/
@@ -149,14 +143,6 @@ header {
     background-color: #ffff; 
     border-radius: 200px; 
     z-index: -1; 
-}
-
-.bx {
-    transition: transform 0.3s;
-}
-.bx:hover {
-    transform: scale(1.2);
-    color: #fff;
 }
 
 /*section2*/
